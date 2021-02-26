@@ -1,0 +1,367 @@
+<html>
+
+<head>
+    <title>Rishabh shah</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .blackcolor {
+            background-color: black;
+        }
+
+        #text {
+            display: inline-block;
+            color: white;
+            text-shadow: 2px 2px 5px rgb(144, 248, 144);
+            border-right: 3px solid #e00909f4;
+            font-family: Lucida Console;
+        }
+
+        .abc:hover {
+            background-color: rgba(40, 238, 0, 0.808) !important;
+            color: white !important;
+            border-radius: 10%;
+        }
+
+        img {
+            border-radius: 50%;
+
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .makeblack {
+            background-color: #000000;
+            color: white;
+        }
+
+        .ulbot {
+            display: inline-grid;
+            grid-auto-flow: row;
+            grid-gap: 24px;
+            justify-items: center;
+            margin: auto;
+        }
+
+        @media (min-width: 500px) {
+            .ulbot {
+                grid-auto-flow: column;
+            }
+        }
+
+        .anch {
+            color: white;
+            text-decoration: none;
+            box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+        }
+
+        .anch:hover {
+            box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+        }
+
+        .libot:last-child {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        .libot:hover~.libot p {
+            animation: wave-animation 0.3s infinite;
+        }
+
+        .foot {
+            display: flex;
+            height: auto;
+            width: 100%;
+            background-color: black;
+            color: white;
+            line-height: 1.3;
+            font-family: Menlo, monospace;
+        }
+
+        @keyframes wave-animation {
+
+            0%,
+            100% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(20deg);
+            }
+
+            75% {
+                transform: rotate(-15deg);
+            }
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: rgb(27, 255, 27);
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up"
+            style="font-size: 20px;"></i></button>
+    <nav class="navbar navbar-expand-lg navbar-dark blackcolor sticky">
+        <a class="navbar-brand" href="https://github.com/Rishabh11200/">
+            <h4>
+                <div id="text" class="position-absolute ml-2"></div>
+            </h4>
+        </a>
+        <button class="navbar-toggler offset-10" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link abc" href="#home">
+                            <h7>About</h7>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link abc" href="#academicdetails">
+                            <h7>Academic Details</h7>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link abc" href="#skills">
+                            <h7>Skills</h7>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item active">
+                        <a class="nav-link abc" href="#internshipsandcertifications">
+                            <h7>Internships And Certifications</h7>
+                        </a>
+                    </li> -->
+                    <li class="nav-item active">
+                        <a class="nav-link abc" href="#projects">
+                            <h7>Projects</h7>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link abc" href="#personaldetails">
+                            <h7>Personal Details</h7>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="continer ml-4 mt-1">
+            <br>
+            <br>
+            <img src="rishabh.jpg" class="img-fluid mt-4" alt="Rishabh" width="307" height="240" /> <br>
+            <br>
+            <h6>Computer Application and Information Technology</h6>
+            Gujarat Law society,FCAIT.<br>
+            <br>
+            <u>
+                <h6>Carrier Objective :</h6>
+            </u>
+            Making myself more knowledgeable by gaining more experience and expandmy learning and skills in same
+            field.<br>
+        </div>
+    </section>
+    <hr>
+    <section id="academicdetails">
+        <div class="continer">
+            <div class="ml-4 mt-1 ">
+                <h3>Academic Details</h3><br>
+                <div class="grid-container">
+                    <div class="grid-item"><i class="fa fa-hand-o-right" style="font-size:21px"></i> GLS Faculty of
+                        computer application and infromation
+                        technology.<br>Bsc(IT)<br>CGPA - 8.62%.</div>
+                    <div class="grid-item">2017-2020</div><br>
+                    <div class="grid-item"><i class="fa fa-hand-o-right" style="font-size:21px"></i> Divine Buds English
+                        School<br>HSC<br>66.0%</div>
+                    <div class="grid-item">2015-2017</div><br>
+                    <div class="grid-item"><i class="fa fa-hand-o-right" style="font-size:21px"></i> Divine Buds English
+                        School<br>SSC<br>64.0%</div>
+                    <div class="grid-item">2014-2015</div><br>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="skills">
+        <div class="continer ml-4 mt-1">
+            <h3>Skills</h3>
+            <u>Programming Languages:</u><br>
+            C, C++, Python, JAVA, HTML, CSS, PHP, Javascript.<br><br>
+            <u>Tools :</u><br>
+            Android Studio, Visual code, Arduino.<br><br>
+            <u>Other Skills:</u><br>
+            Debugging, Communication, Problem solving, Coding.<br>
+        </div>
+    </section>
+    <hr>
+    <section id="projects">
+        <div class="continer ">
+            <div class="ml-4 mt-1">
+                <h3>Projects</h3>
+                <br><u>ArtInside</u><br>
+                A Blockchain based android app which stores registered member images and secure that app for Auction or
+                any further copyrights. <br>
+                <br><u>Project submission organizer</u><br>
+                Python based project made in Django (A python framework) which manages the submission done by students
+                and student individual can make group / team for Assignment.<br>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="personaldetails">
+        <div class="continer ml-4 mt-1">
+            <h3>Personal Details</h3>
+            <br>Date of Birth :- 11<sup>th</sup> July 2000
+            <br>Address :- Flat no. 1 ,J.L. complex,
+            <br> Maninagar,
+            <br> Ahmedabad-380008,
+            <br> Gujarat.
+            <br>Nationality :- Indian
+            <br>Mobile :- +918849048015
+            <br>
+            <br>
+            <h5><u>Area of Interest:</u></h5><br>
+            • Machine Learning.<br>
+            • Developer.<br>
+            • Designing.<br>
+        </div>
+    </section>
+
+    <div class="foot">
+        <ul class="ulbot">
+            <li class="libot"><a href="https://www.linkedin.com/in/rishabh-shah-a80508190"><i
+                        class="fa fa-linkedin-square"></i> Linkedin</a></li>
+            <li class="libot"><a href="https://github.com/Rishabh11200/"><i class="fa fa-github"></i> Github</a></li>
+            <li class="libot"><a href="rishabhshah1100@gmail.com"><i class="fa fa-envelope"></i> Email</a></li>
+            <li class="libot">
+                <p>👋</p>
+            </li>
+        </ul>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+        // List of sentences
+        var _CONTENT = ["Rishabh", "Shah"];
+
+        // Current sentence being processed
+        var _PART = 0;
+
+        // Character number of the current sentence being processed 
+        var _PART_INDEX = 0;
+
+        // Holds the handle returned from setInterval
+        var _INTERVAL_VAL;
+
+        // Element that holds the text
+        var _ELEMENT = document.querySelector("#text");
+
+        // Implements typing effect
+        function Type() {
+            var text = _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+            _ELEMENT.innerHTML = text;
+            _PART_INDEX++;
+
+            // If full sentence has been displayed then start to delete the sentence after some time
+            if (text === _CONTENT[_PART]) {
+                clearInterval(_INTERVAL_VAL);
+                setTimeout(function () {
+                    _INTERVAL_VAL = setInterval(Delete, 50);
+                }, 1000);
+            }
+        }
+
+        // Implements deleting effect
+        function Delete() {
+            var text = _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+            _ELEMENT.innerHTML = text;
+            _PART_INDEX--;
+
+            // If sentence has been deleted then start to display the next sentence
+            if (text === '') {
+                clearInterval(_INTERVAL_VAL);
+
+                // If last sentence then display the first one, else move to the next
+                if (_PART == (_CONTENT.length - 1))
+                    _PART = 0;
+                else
+                    _PART++;
+                _PART_INDEX = 0;
+
+                // Start to display the next sentence after some time
+                setTimeout(function () {
+                    _INTERVAL_VAL = setInterval(Type, 100);
+                }, 200);
+            }
+        }
+
+        // Start the typing effect on load
+        _INTERVAL_VAL = setInterval(Type, 100);
+
+    </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
